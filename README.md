@@ -15,8 +15,9 @@ Nodejs Package: marked
 
 ## Todo
 1. [x] Create python virtual environment
-    * [x] Turn pipenv download url to tsinghua
-2. Design flask file struct
-3. Design headed pages
+    - [x] Turn pipenv download url to tsinghua
+2. [x] Design flask file struct
+3. [ ] Design headed pages
+    - [x] Desing index.js layout
 4. Design database
 5. Write flask code to show the page on web
