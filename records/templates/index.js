@@ -1,34 +1,93 @@
-const c1 = document.querySelector('#c1 .shortText');
-const c2 = document.querySelector('#c2 .shortText');
-const c3 = document.querySelector('#c3 .shortText');
-const c4 = document.querySelector('#c4 .shortText');
+const n1 = document.querySelector("#n1 .shortText");
+const n2 = document.querySelector("#n2 .shortText");
+const d1 = document.querySelector("#d1 .shortText");
+const d2 = document.querySelector("#d2 .shortText");
+const i1 = document.querySelector('#i1 .text');
+const i2 = document.querySelector('#i2 .text');
 
-c1.innerHTML = `
-    * Include android web desktop application, will support all device
-    * Can record text, picture, video, audio
-    * Having the majority of classify, such as link,diary, note, blog and so on, but only designed personally by alonescar
-`
-c2.innerHTML = `
-    Environement: Python Nodejs
+function copyUrl(url) {
+  navigator.clipboard
+    .writeText(url)
+    .then(swal('Copied Successed', {
+      icon: 'success',
+      button: false,
+      timer: 1000
+    }));
+}
 
-    Python Package: pipenv flask flask-sqlalchemy
-
-    Nodejs Package:
-`
-c3.innerHTML = `
+n1.innerHTML = `
     1. [x] Create python virtual environment
         * [x] Turn pipenv download url to tsinghua
     2. Design flask file struct
     3. Design headed pages
     4. Design database
     5. Write flask code to show the page on web
+`;
+
+n2.innerHTML = `
+I am William Wallace
+And I see a whole army of my countrymen here in defiance of tyranny
+You've come to fight as free men
+And free men you are
+What will you do with that freedom
+Will you fight?
+Fight ,and you may die ,
+Run ,and you”ll live at least a while
+And dying in your beds many years from now.
+Would you be willing to trade all the days from this day to that
+For one chance ,just for one chance
+To come back here and tell our enemies that they may take our lives
+But they'll never take our freedom
+I am William Wallace
+And I see a whole army of my countrymen here in defiance of tyranny
+You've come to fight as free men
+And free men you are
+What will you do with that freedom
+Will you fight?
+Fight ,and you may die ,
+Run ,and you”ll live at least a while
+And dying in your beds many years from now.
+Would you be willing to trade all the days from this day to that
+For one chance ,just for one chance
+To come back here and tell our enemies that they may take our lives
+But they'll never take our freedom
+I am William Wallace
+And I see a whole army of my countrymen here in defiance of tyranny
+You've come to fight as free men
+And free men you are
+What will you do with that freedom
+`;
+
+d1.innerHTML = `
+提起阿司匹林，很多人都很熟悉，也服用过这种药，它主要用于镇痛作用。后来，人们发现阿司匹林还能抑制血小板聚集，预防和治疗缺血性心脏病、心绞痛、心肺梗塞、脑血栓形成，而且阿司匹林还有抗癌等多种疗效，被人们称这“万灵神药”。
+阿司匹林的前身是水杨酸与乙酸酐合成了乙酰水杨酸，它是艾兴格林的下属德国化学家费利克斯·霍夫曼发明的。利克斯·霍夫曼的父亲有很严重的风湿病，犯病时疼痛难忍，非常痛苦。利克斯·霍夫曼为父亲研制出能止疼痛的药物乙酰水杨酸，父亲服用后效果非常好。于是，他决定把乙酰水杨酸再做进一步研究，用来治疗疼痛。在上司阿图尔·艾兴格林的指导并提供必要的技术下，研制出阿司匹林。
+阿司匹林研制成功后，广泛用于止痛，效果很好。可是阿司匹林是胃融片，胃里融解消化的，对胃粘膜刺激很大，有很大的副作用。服用后会恶心、呕吐、过敏等，很多人因为服用后适应不了这种厉害的副作用，而不得不停服，甚至拒绝接受它。提起阿司匹林，很多人都很熟悉，也服用过这种药，它主要用于镇痛作用。后来，人们发现阿司匹林还能抑制血小板聚集，预防和治疗缺血性心脏病、心绞痛、心肺梗塞、脑血栓形成，而且阿司匹林还有抗癌等多种疗效，被人们称这“万灵神药”。
+阿司匹林的前身是水杨酸与乙酸酐合成了乙酰水杨酸，它是艾兴格林的下属德国化学家费利克斯·霍夫曼发明的。利克斯·霍夫曼的父亲有很严重的风湿病，犯病时疼痛难忍，非常痛苦。利克斯·霍夫曼为父亲研制出能止疼痛的药物乙酰水杨酸，父亲服用后效果非常好。于是，他决定把乙酰水杨酸再做进一步研究，用来治疗疼痛。在上司阿图尔·艾兴格林的指导并提供必要的技术下，研制出阿司匹林。
+阿司匹林研制成功后，广泛用于止痛，效果很好。可是阿司匹林是胃融片，胃里融解消化的，对胃粘膜刺激很大，有很大的副作用。服用后会恶心、呕吐、过敏等，很多人因为服用后适应不了这种厉害的副作用，而不得不停服，甚至拒绝接受它。提起阿司匹林，很多人都很熟悉，也服用过这种药，它主要用于镇痛作用。后来，人们发现阿司匹林还能抑制血小板聚集，预防和治疗缺血性心脏病、心绞痛、心肺梗塞、脑血栓形成，而且阿司匹林还有抗癌等多种疗效，被人们称这“万灵神药”。
+阿司匹林的前身是水杨酸与乙酸酐合成了乙酰水杨酸，它是艾兴格林的下属德国化学家费利克斯·霍夫曼发明的。利克斯·霍夫曼的父亲有很严重的风湿病，犯病时疼痛难忍，非常痛苦。利克斯·霍夫曼为父亲研制出能止疼痛的药物乙酰水杨酸，父亲服用后效果非常好。于是，他决定把乙酰水杨酸再做进一步研究，用来治疗疼痛。在上司阿图尔·艾兴格林的指导并提供必要的技术下，研制出阿司匹林。
+阿司匹林研制成功后，广泛用于止痛，效果很好。可是阿司匹林是胃融片，胃里融解消化的，对胃粘膜刺激很大，有很大的副作用。服用后会恶心、呕吐、过敏等，很多人因为服用后适应不了这种厉害的副作用，而不得不停服，甚至拒绝接受它。
+`;
+
+d2.innerHTML = `
+艾兴格林见阿司匹林因副作用大，人们拒绝服用，甚至厌恶，心里很觉不安，本来他研究阿司匹林是给人们治病的，结果却因服用又增加了身体的其他痛苦，就想放弃阿司匹林，打算重新研究别的药物来代替阿司匹林。
+有一次，他在查找资料时看到一篇有关人体吸收的文章，文章给了他很大启发，令他茅塞顿开。他想：阿司匹林因为是在胃里过早释放药效，所以才会有副作用。如果把它制成肠融片，让它在肠子里释放并吸收药效，不就能减轻副作用了吗？于是，艾兴格林再一次研究试验阿司匹林，经过无数次的失败，最终研制出阿司匹林的肠融片。这样一来就大大减轻了副作用，经患者服用后，获得患者的认可和欢迎。
+后来，人们发现阿司匹林不但有解热镇痛作用，还有多种治疗作用。有聪明人也会将阿司匹林适用于生活的其他领域，也收到明显的效果。如果有兴趣的话，上网搜阿司匹林的作用，一定会搜到不少结果。这个差点被放弃的“神药”，如今已大发异彩，所以说，阿司匹林是失败中诞生的“神药”。
+面对失败时，不一定就得放弃，换个角度和思维或许就能得到另外一种成功。
+`;
+
+i1.innerHTML = `
+提起阿司匹林，很多人都很熟悉，也服用过这种药，它主要用于镇痛作用。后来，人们发现阿司匹林还能抑制血小板聚集，预防和治疗缺血性心脏病、心绞痛、心肺梗塞、脑血栓形成，而且阿司匹林还有抗癌等多种疗效，被人们称这“万灵神药”。
+阿司匹林的前身是水杨酸与乙酸酐合成了乙酰水杨酸，它是艾兴格林的下属德国化学家费利克斯·霍夫曼发明的。利克斯·霍夫曼的父亲有很严重的风湿病，犯病时疼痛难忍，非常痛苦。利克斯·霍夫曼为父亲研制出能止疼痛的药物乙酰水杨酸，父亲服用后效果非常好。于是，他决定把乙酰水杨酸再做进一步研究，用来治疗疼痛。在上司阿图尔·艾兴格林的指导并提供必要的技术下，研制出阿司匹林。
+阿司匹林研制成功后，广泛用于止痛，效果很好。可是阿司匹林是胃融片，胃里融解消化的，对胃粘膜刺激很大，有很大的副作用。服用后会恶心、呕吐、过敏等，很多人因为服用后适应不了这种厉害的副作用，而不得不停服，甚至拒绝接受它。提起阿司匹林，很多人都很熟悉，也服用过这种药，它主要用于镇痛作用。后来，人们发现阿司匹林还能抑制血小板聚集，预防和治疗缺血性心脏病、心绞痛、心肺梗塞、脑血栓形成，而且阿司匹林还有抗癌等多种疗效，被人们称这“万灵神药”。
+阿司匹林的前身是水杨酸与乙酸酐合成了乙酰水杨酸，它是艾兴格林的下属德国化学家费利克斯·霍夫曼发明的。利克斯·霍夫曼的父亲有很严重的风湿病，犯病时疼痛难忍，非常痛苦。利克斯·霍夫曼为父亲研制出能止疼痛的药物乙酰水杨酸，父亲服用后效果非常好。于是，他决定把乙酰水杨酸再做进一步研究，用来治疗疼痛。在上司阿图尔·艾兴格林的指导并提供必要的技术下，研制出阿司匹林。
+阿司匹林研制成功后，广泛用于止痛，效果很好。可是阿司匹林是胃融片，胃里融解消化的，对胃粘膜刺激很大，有很大的副作用。服用后会恶心、呕吐、过敏等，很多人因为服用后适应不了这种厉害的副作用，而不得不停服，甚至拒绝接受它。提起阿司匹林，很多人都很熟悉，也服用过这种药，它主要用于镇痛作用。后来，人们发现阿司匹林还能抑制血小板聚集，预防和治疗缺血性心脏病、心绞痛、心肺梗塞、脑血栓形成，而且阿司匹林还有抗癌等多种疗效，被人们称这“万灵神药”。
+阿司匹林的前身是水杨酸与乙酸酐合成了乙酰水杨酸，它是艾兴格林的下属德国化学家费利克斯·霍夫曼发明的。利克斯·霍夫曼的父亲有很严重的风湿病，犯病时疼痛难忍，非常痛苦。利克斯·霍夫曼为父亲研制出能止疼痛的药物乙酰水杨酸，父亲服用后效果非常好。于是，他决定把乙酰水杨酸再做进一步研究，用来治疗疼痛。在上司阿图尔·艾兴格林的指导并提供必要的技术下，研制出阿司匹林。
+阿司匹林研制成功后，广泛用于止痛，效果很好。可是阿司匹林是胃融片，胃里融解消化的，对胃粘膜刺激很大，有很大的副作用。服用后会恶心、呕吐、过敏等，很多人因为服用后适应不了这种厉害的副作用，而不得不停服，甚至拒绝接受它。
 `
 
-c4.innerHTML = `
-    1. [x] Create python virtual environment
-        * [x] Turn pipenv download url to tsinghua
-    2. Design flask file struct
-    3. Design headed pages
-    4. Design database
-    5. Write flask code to show the page on web
-`
+i2.innerHTML = `
+艾兴格林见阿司匹林因副作用大，人们拒绝服用，甚至厌恶，心里很觉不安，本来他研究阿司匹林是给人们治病的，结果却因服用又增加了身体的其他痛苦，就想放弃阿司匹林，打算重新研究别的药物来代替阿司匹林。
+有一次，他在查找资料时看到一篇有关人体吸收的文章，文章给了他很大启发，令他茅塞顿开。他想：阿司匹林因为是在胃里过早释放药效，所以才会有副作用。如果把它制成肠融片，让它在肠子里释放并吸收药效，不就能减轻副作用了吗？于是，艾兴格林再一次研究试验阿司匹林，经过无数次的失败，最终研制出阿司匹林的肠融片。这样一来就大大减轻了副作用，经患者服用后，获得患者的认可和欢迎。
+后来，人们发现阿司匹林不但有解热镇痛作用，还有多种治疗作用。有聪明人也会将阿司匹林适用于生活的其他领域，也收到明显的效果。如果有兴趣的话，上网搜阿司匹林的作用，一定会搜到不少结果。这个差点被放弃的“神药”，如今已大发异彩，所以说，阿司匹林是失败中诞生的“神药”。
+面对失败时，不一定就得放弃，换个角度和思维或许就能得到另外一种成功。
+`;

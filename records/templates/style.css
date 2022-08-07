@@ -8,13 +8,13 @@
     background: purple;
     width: 100%;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #header h1 {
-    text-align: center;
     color: white;
-    line-height: 100px;
-    margin: 0;
 }
 
 #contents {
@@ -26,33 +26,48 @@
     margin-bottom: 10px;
 }
 
-.content {
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer h1 {
+    color: white;
+}
+
+/* Designed content_note */
+
+.content_note {
     background-color: aqua;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     width: 100%;
 }
 
-.content .pic {
+.content_note .pic {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 5px;
 }
 
-.pic img {
+.content_note .pic img {
     width: 300px;
     height: 300px;
     object-fit: cover;
 }
 
-.content .text {
+.content_note .text {
     flex: 3;
     display: flex;
     /* background-color: bisque; */
@@ -62,7 +77,7 @@
     margin: 5px;
 }
 
-.content .text .btns {
+.content_note .text .btns {
     flex: 1;
     display: flex;
     background-color: brown;
@@ -70,20 +85,182 @@
     align-items: center;
 }
 
-.content .shortText {
-    flex: 5;
+.content_note .text .shortText {
+    flex: 7;
     background-color: white;
 }
 
-#footer {
-    width: 100%;
-    height: 100px;
-    background-color: cornflowerblue;
+.content_note .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    background-color: violet;
 }
 
-#footer h1 {
-    text-align: center;
-    color: white;
-    line-height: 100px;
-    margin: 0;
+.content_note .title .h2 {
+    color: darkgoldenrod;
+}
+
+.content_note .attribute {
+    display: flex;
+    flex: 1;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content_note .attribute span {
+    color: blueviolet;
+}
+
+/* Designed content_diary */
+
+.content_diary {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.content_diary .pic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.content_diary .pic img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.content_diary .text {
+    flex: 3;
+    display: flex;
+    /* background-color: bisque; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+    margin: 5px;
+}
+
+.content_diary .text .btns {
+    flex: 1;
+    display: flex;
+    background-color: brown;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_diary .text .shortText {
+    flex: 7;
+    background-color: white;
+}
+
+.content_diary .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    background-color: violet;
+}
+
+.content_diary .title .h2 {
+    color: darkgoldenrod;
+}
+
+.content_diary .attribute {
+    display: flex;
+    flex: 1;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content_diary .attribute span {
+    color: blueviolet;
+}
+
+/* Designed content_link */
+
+.content_link {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.content_link .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    margin: 5px;
+}
+
+.content_link .attribute {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+    background-color: black;
+}
+
+.content_link .attribute span {
+    color: whitesmoke;
+}
+
+.content_link .url {
+    background-color: rgb(42, 153, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.content_link a {
+    text-decoration: none;
+}
+
+/* Designed content_idea */
+.content_idea {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.content_idea .time {
+    flex: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    margin: 5px;
+}
+
+.content_idea .text {
+    flex: 3px;
+    margin: 5px;
+    background-color: brown;
 }
