@@ -1,7 +1,9 @@
-/diary/static/data/
-/diary/static/node_modules/
-/diary/diary.db
-/__pycache__/
-/diary/__pycache__/
+/records/static/data/
+/records/static/node_modules/
+/records/__pycache__/
+/records/static/__pycache__/
+/records/templates/__pycache__/
+/records/blueprints/__pycache__/
 /.idea/
+/.vscode
 /test/
