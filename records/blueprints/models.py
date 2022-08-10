@@ -42,6 +42,7 @@ class Link(Base):
     type = Column(TEXT, nullable=False)
     belong = Column(TEXT, nullable=False)
     time = Column(TEXT, nullable=False)
+    title = Column(TEXT, nullable=False)
 
 
 class Note(Base):

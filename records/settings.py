@@ -7,4 +7,4 @@ SQLALCHEMY_DATABASE_URI = "{}+{}://{}:{}@{}:{}/{}".format(
     '24364',
     'als-records'
 )
-SQLALCHEMY_TRACK_MODIFICATIONS = True
+SQLALCHEMY_TRACK_MODIFICATIONS = False

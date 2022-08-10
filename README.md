@@ -1,4 +1,5 @@
 # als-records
+
 AloneScar Personal Recording
 
 ## Introduction
@@ -22,6 +23,10 @@ Nodejs Package: marked
 2. [x] Design flask file struct
 3. [ ] Design headed pages
     * [x] Design index.html layout
-    * [ ] Design blog diary link note css
-4. Design database
+    * [x] Design blog diary link note idea css
+4. [x]Design database
 5. Write flask code to show the page on web
+    * [x] Create python coding environment, flask can run on server easily
+    * [ ] Create two fake datas in every type content on tencent cloud
+    * [ ] How to list every data by time, craete a table to collect all times?
+    * [ ] Try to render faker data on web

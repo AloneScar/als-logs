@@ -8,6 +8,7 @@ flask = "*"
 sqlacodegen = "*"
 pymysql = "*"
 flask-sqlalchemy = "*"
+python-dotenv = "*"
 
 [dev-packages]
 

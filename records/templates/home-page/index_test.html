@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='/home-page/style.css') }}"
+    />
   </head>
   <body>
     <div id="container">
@@ -168,8 +171,7 @@
         <h1>By alonescar</h1>
       </div>
     </div>
-    <script src="sweetalert.min.js"></script>
-    <script src="marked.min.js"></script>
-    <script src="index.js"></script>
+    <script src="{{ url_for('static', filename='/node_modules/sweetalert/dist/sweetalert.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='/home-page/index.js') }}"></script>
   </body>
 </html>
