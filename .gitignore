@@ -5,5 +5,5 @@
 /records/templates/__pycache__/
 /records/blueprints/__pycache__/
 /.idea/
-/.vscode
+/.vscode/
 /test/
