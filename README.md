@@ -24,7 +24,7 @@ Nodejs Package: marked
 3. [ ] Design headed pages
     * [x] Design index.html layout
     * [x] Design blog diary link note idea css
-4. [x]Design database
+4. [x] Design database
 5. Write flask code to show the page on web
     * [x] Create python coding environment, flask can run on server easily
     * [ ] Create two fake datas in every type content on tencent cloud

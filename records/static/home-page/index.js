@@ -48,10 +48,11 @@ function getContentDiary(diary) {
             </div>
             <div class="shortText">${diary.shortText}</div>
             <div class="btns">
-                <button onclick="javascript: window.location.href='/diary/${diary.belong}/${diary.tittle}'">Read More</button>
+                <button onclick="javascript: window.location.href='/diary/${diary.belong}/${diary.title}'">Read More</button>
             </div>
         </div>
     `
+    return content_diary
 }
 
 function getContentLink(link) {
@@ -86,6 +87,7 @@ function getContentLink(link) {
           </div>
         </div>
     `
+    return content_link
 }
 
 function getContentIdea(idea) {
@@ -95,6 +97,7 @@ function getContentIdea(idea) {
           <div class="text">${idea.textUrl}</div>
         </div>
     `
+    return content_idea
 }
 
 function copyUrl(url) {
@@ -109,14 +112,16 @@ function copyUrl(url) {
 // lasted running
 $(function () {
   $.get("/getHomeContents", (data) => {
+    console.log(data);
     data.contents.forEach(content => {
-      if (content.type == 'note') {
+      if (content.type == 'Note') {
         contents.append($(getContentNote(content)))
-      } else if (content.type == 'diary') {
+      } else if (content.type == 'Diary') {
         contents.append($(getContentDiary(content)))
-      } else if (content.type == 'link') {
+        console.log(getContentDiary(content));
+      } else if (content.type == 'Link') {
         contents.append($(getContentLink(content)))
-      } else if (content.type == 'idea') {
+      } else if (content.type == 'Idea') {
         contents.append($(getContentIdea(content)))
       }
     });

@@ -9,6 +9,7 @@ sqlacodegen = "*"
 pymysql = "*"
 flask-sqlalchemy = "*"
 python-dotenv = "*"
+pysnowflake = "*"
 
 [dev-packages]
 
