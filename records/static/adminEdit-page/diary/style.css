@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+body {
+    margin: 0;
+}
+
+#input {
+    width: 45%;
+    padding: 45px;
+    outline: none;
+    resize: none;
+    margin: 10px;
+}
+
+.markdown-body {
+    border: 1px solid;
+    width: 45%;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 45px;
+}
