@@ -1,25 +1,55 @@
 .container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.text {
+    display: flex;
     justify-content: space-around;
+    margin: 10px;
+}
+
+.others {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    margin: 5px;
 }
 
-body {
-    margin: 0;
+.attribute input {
+    margin: 5px;
 }
 
-#input {
+.input {
     width: 45%;
-    padding: 45px;
+    padding: 20px;
     outline: none;
     resize: none;
-    margin: 10px;
+    margin-right: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .markdown-body {
     border: 1px solid;
     width: 45%;
-    box-sizing: border-box;
-    margin: 10px;
-    padding: 45px;
+    /* box-sizing: border-box; */
+    padding: 20px;
+    margin-left: 5px;
+    overflow-y: scroll;
+}
+
+.markdown-body::-webkit-scrollbar {
+    display: none;
 }

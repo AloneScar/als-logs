@@ -1,4 +1,5 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request
+import json
 
 
 admin_blue = Blueprint('admin', __name__, url_prefix='/admin')
@@ -14,9 +15,14 @@ def adminEdit_page():
     return render_template('adminEdit-page/index.html')
 
 
-@admin_blue.route('/edit/diary')
+@admin_blue.route('/edit/diary', methods=['GET', 'POST'])
 def editDiary_page():
-    return render_template('adminEdit-page/diary/index.html')
+    if request.method == 'GET':
+        return render_template('adminEdit-page/diary/index.html')
+    else:
+        data = json.loads(request.get_data())
+        print(data['text'])
+        return 'true'
 
 
 @admin_blue.route('/edit/note')

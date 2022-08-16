@@ -10,6 +10,7 @@ pymysql = "*"
 flask-sqlalchemy = "*"
 python-dotenv = "*"
 pysnowflake = "*"
+flask-wtf = "*"
 
 [dev-packages]
 
